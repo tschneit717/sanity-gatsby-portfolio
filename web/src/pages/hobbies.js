@@ -1,14 +1,14 @@
-import React from 'react';
+import * as React from 'react';
 import { PageWrapperStyles } from '../assets/styles/GlobalStyles';
-import ContentWrapper from '../components/ContentWrapper';
 import Header from '../components/Header';
+import ContentWrapper from '../components/ContentWrapper';
 
-const HomePage = () => {
+const HobbiesPage = () => {
   const mainText = "Hello, I'm Tom";
   const subText = "I'm a full-stack developer.";
   return (
     <>
-      <Header mainText={mainText} subText={subText} color="green" />
+      <Header mainText={mainText} subText={subText} color="yellow" />
       <ContentWrapper>
         <PageWrapperStyles>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -51,4 +51,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default HobbiesPage;
