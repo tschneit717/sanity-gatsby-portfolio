@@ -2,3 +2,6 @@
   from = "/*"
   to = "/"
   status = 200
+[build]
+  publish = "/dist"
+  command = "npm install && npm run build"
