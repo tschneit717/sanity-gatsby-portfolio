@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { PageWrapperStyles } from '../assets/styles/GlobalStyles';
-import ContentWrapper from '../components/ContentWrapper';
-import Header from '../components/Header';
-import ContactForm from '../components/Contact';
+import * as React from "react";
+import { PageWrapperStyles } from "./../assets/styles/GlobalStyles";
+import ContentWrapper from "./../components/ContentWrapper";
+import Header from "./../components/Header";
+import ContactForm from "./../components/Contact";
 
 function sendMessage(message) {
   console.log(message);
