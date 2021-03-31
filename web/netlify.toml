@@ -1,4 +1,4 @@
 [build]
-  base = "/"
+  base = "/web"
   publish = "/public"
   command = "npm run clean-cache && npm run build"
