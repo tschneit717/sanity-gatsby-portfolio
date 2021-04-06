@@ -31,6 +31,11 @@ export default {
       name: "body",
       title: "Body",
       type: "projectPortableText"
+    },
+    {
+      name: "file",
+      title: "File",
+      type: "file"
     }
   ],
   preview: {
