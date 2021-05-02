@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FormStyles } from '../assets/styles/ContactStyles';
+import { FormStyles } from '../assets/styles/components/ContactStyles';
 
 class ContactForm extends React.Component {
   nameRef = React.createRef();

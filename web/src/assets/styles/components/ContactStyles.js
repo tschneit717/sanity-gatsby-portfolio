@@ -1,5 +1,4 @@
-import styled from 'styled-components';
-
+import styled from "styled-components";
 export const FormStyles = styled.form`
   display: flex;
   flex-direction: column;
@@ -23,7 +22,7 @@ export const FormStyles = styled.form`
     }
     &:before {
       border-radius: 0 0 10px 10px;
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       left: 0px;

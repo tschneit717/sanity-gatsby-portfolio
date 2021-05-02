@@ -1,6 +1,6 @@
 // Load variables from `.env` as soon as possible
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV || "development"}`
+  path: `.env.${process.env.NODE_ENV || "development"}`,
 });
 
 const clientConfig = require("./client-config");
@@ -11,6 +11,7 @@ const isProd = process.env.NODE_ENV === "production";
 module.exports = {
   plugins: [
     "gatsby-plugin-sass",
+    "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-sanity",
@@ -18,40 +19,40 @@ module.exports = {
         ...clientConfig.sanity,
         token,
         watchMode: !isProd,
-        overlayDrafts: !isProd && token
-      }
+        overlayDrafts: !isProd && token,
+      },
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`quicksand`],
-        display: "swap"
-      }
-    }
+        display: "swap",
+      },
+    },
   ],
   siteMetadata: {
     title: "Tom Schneider",
     menuLinks: [
       {
         name: "Home",
-        link: "/"
+        link: "/",
       },
       {
         name: "About Me",
-        link: "/about"
+        link: "/about",
       },
       {
         name: "Portfolio",
-        link: "/portfolio"
+        link: "/portfolio",
       },
       {
         name: "Hobbies",
-        link: "/hobbies"
+        link: "/hobbies",
       },
       {
         name: "Get In Touch →",
-        link: "/contact"
-      }
-    ]
-  }
+        link: "/contact",
+      },
+    ],
+  },
 };

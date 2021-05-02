@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
 import "./../assets/styles/globalStyles.scss";
@@ -21,6 +22,11 @@ export default function Layout({ children }) {
   `);
   return (
     <>
+      <Helmet
+        htmlAttributes={{
+          lang: "en",
+        }}
+      />
       <header>
         <Navigation query={data} />
       </header>
