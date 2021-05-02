@@ -41,7 +41,6 @@ class Navigation extends React.Component {
 
   render() {
     const menuLinks = this.props.query.site.siteMetadata.menuLinks;
-    console.log(this);
     return (
       <>
         <ButtonStyles
