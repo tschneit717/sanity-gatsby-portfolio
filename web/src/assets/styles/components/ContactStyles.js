@@ -7,14 +7,14 @@ export const FormStyles = styled.form`
     margin: 8px 0;
     display: flex;
     label {
-      color: white;
+      color: var(--darkPrimary);
       width: 100%;
     }
     input,
     textarea {
       margin-top: 10px;
-      background: #133b5c;
-      color: white;
+      background: var(--lightPrimary);
+      color: var(--darkPrimary);
       width: calc(100% - 16px);
       border: none;
       padding: 8px;
@@ -44,7 +44,7 @@ export const FormStyles = styled.form`
     position: relative;
     margin-top: 10px;
     display: block;
-    color: white;
+    color: var(--darkPrimary);
     padding: 6px;
     border-radius: 10px;
     width: 100px;
@@ -53,7 +53,7 @@ export const FormStyles = styled.form`
     z-index: 10;
     background: linear-gradient(to right, #b294ff, #57e6e6, #feffb8);
     .button-text {
-      background: #133b5c;
+      background: var(--lightPrimary);
       left: 2px;
       top: 2px;
       width: calc(100% - 4px);

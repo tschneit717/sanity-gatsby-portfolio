@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const PageWrapperStyles = styled.div`
-  background: #1d2d50;
-  color: white;
+  background: var(--lightSecondary);
+  color: var(--darkPrimary);
   border-radius: 20px;
   padding: 50px 40px;
   margin: -60px auto 50px;
@@ -22,9 +22,9 @@ export const ContainerStyles = styled.div`
 
 export const FooterStyles = styled.footer`
   width: 100%;
-  background: #1d2d50;
+  background: var(--lightSecondary);
   padding: 40px 0;
-  color: white;
-  border-top: 1px solid #133b5c;
-  box-shadow: 0px 8px 10px 10px #133b5c;
+  color: var(--darkPrimary);
+  border-top: 1px solid var(--lightSecondary);
+  box-shadow: 0px 8px 10px 10px var(--lightSecondary);
 `;

@@ -1,3 +1,10 @@
+:root {
+  --darkPrimary: #1d2d50;
+  --darkSecondary: #133b5c;
+  --lightPrimary: #ffffff;
+  --lightSecondary: #fff8f2;
+}
+
 html {
   position: relative;
 }
@@ -12,12 +19,12 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background: #061639;
+  background: var(--lightPrimary);
   font-family: "Quicksand", sans-serif;
 }
 
 .green-gradient {
-  background: linear-gradient(to top, #1d976c, #93f9b9);
+  background: linear-gradient(to top, #1d976c, #48f086);
 }
 .blue-gradient {
   background: linear-gradient(to top, #2193b0, #6dd5ed);
@@ -26,7 +33,7 @@ body {
   background: linear-gradient(to top, #ff512f, #f09819);
 }
 .yellow-gradient {
-  background: linear-gradient(to top, #ffa751, #ffe259);
+  background: linear-gradient(to top, #ffa751, #f8d422);
 }
 .purple-gradient {
   background: linear-gradient(to top, #8e54e9, #4776e6);
