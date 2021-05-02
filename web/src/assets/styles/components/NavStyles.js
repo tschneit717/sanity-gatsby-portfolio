@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ButtonStyles = styled.button`
   display: none;
@@ -93,7 +93,7 @@ export const NavStyles = styled.nav`
       text-decoration: none;
       position: relative;
       &:after {
-        content: '';
+        content: "";
         width: 0%;
         height: 2px;
         background: white;
@@ -122,11 +122,13 @@ export const NavStyles = styled.nav`
         border-radius: 20px;
         border: 2px solid white;
         margin-left: auto;
+        transition: 0.2s background ease-in-out;
+        background: #ffffff00;
         &:after {
           content: none;
         }
         &:hover {
-          background: white;
+          background: #ffffffff;
           color: black;
         }
       }
