@@ -4,21 +4,6 @@ import ContentWrapper from "../components/ContentWrapper";
 import { PageWrapperStyles } from "../assets/styles/GlobalStyles";
 import Header from "../components/Header";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
-
-const paragraphStyles = {
-  marginBottom: 48,
-};
 const codeStyles = {
   color: "#8A6534",
   padding: 4,
