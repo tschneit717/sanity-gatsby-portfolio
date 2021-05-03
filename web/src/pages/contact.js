@@ -9,8 +9,8 @@ function sendMessage(message) {
 }
 
 const ContactPage = () => {
-  const mainText = "Hello, I'm Tom";
-  const subText = "I'm a full-stack developer.";
+  const mainText = "Reach Out to Me";
+  const subText = "Or just say hi";
   return (
     <>
       <Header mainText={mainText} subText={subText} color="blue" />

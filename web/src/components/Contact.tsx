@@ -1,12 +1,11 @@
 import React from "react";
-import styled from "styled-components";
 import { FormStyles } from "../assets/styles/components/ContactStyles";
 
-class ContactForm extends React.Component {
-  nameRef = React.createRef();
-  emailRef = React.createRef();
-  textRef = React.createRef();
-  theElliot = React.createRef();
+class ContactForm extends React.Component<{ sendMessage: Function }> {
+  private nameRef = React.createRef<HTMLInputElement>();
+  private emailRef = React.createRef<HTMLInputElement>();
+  private textRef = React.createRef<HTMLTextAreaElement>();
+  private theElliot = React.createRef<HTMLInputElement>();
 
   constructor(props) {
     super(props);
