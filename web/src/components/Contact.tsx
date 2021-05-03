@@ -1,11 +1,12 @@
-import React from 'react';
-import styled from 'styled-components';
-import { FormStyles } from '../assets/styles/components/ContactStyles';
+import React from "react";
+import styled from "styled-components";
+import { FormStyles } from "../assets/styles/components/ContactStyles";
 
 class ContactForm extends React.Component {
   nameRef = React.createRef();
   emailRef = React.createRef();
   textRef = React.createRef();
+  theElliot = React.createRef();
 
   constructor(props) {
     super(props);
@@ -18,6 +19,7 @@ class ContactForm extends React.Component {
       name: this.nameRef.current.value,
       email: this.emailRef.current.value,
       text: this.textRef.current.value,
+      theElliot: this.theElliot.current.value,
     };
     this.props.sendMessage(message);
   }
@@ -40,6 +42,12 @@ class ContactForm extends React.Component {
           <label htmlFor="text">
             Your Message:
             <textarea name="text" ref={this.textRef} />
+          </label>
+        </div>
+        <div className="input-field">
+          <label htmlFor="theElliot">
+            Email
+            <input name="theElliot" type="text" ref={this.theElliot} />
           </label>
         </div>
         <button type="submit">
