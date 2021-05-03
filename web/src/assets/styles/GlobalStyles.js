@@ -26,5 +26,4 @@ export const FooterStyles = styled.footer`
   padding: 40px 0;
   color: var(--darkPrimary);
   border-top: 1px solid var(--lightSecondary);
-  box-shadow: 0px 8px 10px 10px var(--lightSecondary);
 `;
