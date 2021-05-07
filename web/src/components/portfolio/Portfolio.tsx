@@ -55,14 +55,12 @@ const PortfolioCarousel = ({ portfolioItems }) => {
   }, []);
 
   function handleNav(direction: string) {
-    console.log("I DID IT");
-    console.log(direction);
     const newCurrentCard = direction == "PREV" ? state.currentCard - 1 : state.currentCard + 1;
     setState({ ...state, currentCard: newCurrentCard });
   }
 
   return (
-    <PortfolioGridStyles ref={carouselWrapper} data-gap="20">
+    <PortfolioGridStyles ref={carouselWrapper}>
       <div
         ref={carouselFigure}
         style={{ transformOrigin: "50% 50%" + -apothem + "px" }}
@@ -74,6 +72,7 @@ const PortfolioCarousel = ({ portfolioItems }) => {
             styles = {
               transform: "rotateY(" + i * theta + "rad)",
               transformOrigin: "50% 50% " + -apothem + "px",
+              padding: "0 20px 0",
             };
           return (
             <PortfolioItem
