@@ -6,7 +6,7 @@ export default function TiltItem({ children }) {
     tiltMaxAngleX: 5,
     tiltMaxAngleY: 5,
     tiltReverse: true,
-    perspective: 3500,
+    perspective: 3000,
     scale: 1.02,
   });
   return <Tilt {...tilt}>{children}</Tilt>;
