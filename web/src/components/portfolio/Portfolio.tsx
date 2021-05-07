@@ -6,12 +6,7 @@ import { PortfolioNav } from "./PortfolioNav";
 
 interface PortfolioState {
   currentCard: number;
-  theta: number;
-  carousel: {
-    children?: [];
-    width?: number;
-    apothem?: number;
-  };
+  width: number;
 }
 
 const PortfolioCarousel = ({ portfolioItems }) => {
