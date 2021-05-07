@@ -1,11 +1,13 @@
 import { graphql } from "gatsby";
 import * as React from "react";
+import PortfolioPopUpItem from "../components/portfolio/PortfolioPopUpItem";
 import { PageWrapperStyles } from "./../assets/styles/GlobalStyles";
-import ContentWrapper from "./../components/ContentWrapper";
-import Header from "./../components/Header";
-import Portfolio from "./../components/Portfolio";
+import ContentWrapper from "./../components/structure/ContentWrapper";
+import Header from "./../components/structure/Header";
+import Portfolio from "../components/portfolio/Portfolio";
 
 export default function PortfolioPage({ data }) {
+  const [state, setState] = React.useState({});
   const portfolioItems = data.portfolioItems.nodes;
   const mainText = "Behold - My Stuff";
   const subText = "Here's some things I've written a commit message for";
@@ -15,6 +17,7 @@ export default function PortfolioPage({ data }) {
       <ContentWrapper>
         <PageWrapperStyles>
           <Portfolio portfolioItems={portfolioItems} />
+          <PortfolioPopUpItem item={state.item}></PortfolioPopUpItem>
         </PageWrapperStyles>
       </ContentWrapper>
     </>

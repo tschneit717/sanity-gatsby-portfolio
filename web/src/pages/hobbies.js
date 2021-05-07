@@ -1,7 +1,7 @@
 import * as React from "react";
 import { PageWrapperStyles } from "./../assets/styles/GlobalStyles";
-import Header from "./../components/Header";
-import ContentWrapper from "./../components/ContentWrapper";
+import Header from "./../components/structure/Header";
+import ContentWrapper from "./../components/structure/ContentWrapper";
 
 const HobbiesPage = () => {
   const mainText = "Hello, I'm Tom";

@@ -1,6 +1,6 @@
 import React from "react";
-import { HeaderStyles } from "./../assets/styles/components/HeaderStyles";
-import { ContainerStyles } from "../assets/styles/GlobalStyles";
+import { HeaderStyles } from "../../assets/styles/components/HeaderStyles";
+import { ContainerStyles } from "../../assets/styles/GlobalStyles";
 
 export default function Header({ mainText, subText, color }) {
   return (

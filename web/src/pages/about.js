@@ -1,7 +1,7 @@
 import * as React from "react";
 import { PageWrapperStyles } from "./../assets/styles/GlobalStyles";
-import ContentWrapper from "./../components/ContentWrapper";
-import Header from "./../components/Header";
+import ContentWrapper from "./../components/structure/ContentWrapper";
+import Header from "./../components/structure/Header";
 
 const AboutPage = () => {
   const mainText = "Hello, I'm Tom";

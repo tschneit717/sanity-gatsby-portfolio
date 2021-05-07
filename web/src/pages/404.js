@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import ContentWrapper from "../components/ContentWrapper";
+import ContentWrapper from "../components/structure/ContentWrapper";
 import { PageWrapperStyles } from "../assets/styles/GlobalStyles";
-import Header from "../components/Header";
+import Header from "../components/structure/Header";
 
 const codeStyles = {
   color: "#8A6534",

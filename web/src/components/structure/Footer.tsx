@@ -1,7 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import ContentWrapper from './ContentWrapper';
-import { FooterStyles } from '../assets/styles/GlobalStyles';
+import React from "react";
+import styled from "styled-components";
+import ContentWrapper from "./ContentWrapper";
+import { FooterStyles } from "../../assets/styles/GlobalStyles";
 
 export default function Footer(props) {
   return (

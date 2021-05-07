@@ -1,12 +1,20 @@
 import { Link } from "gatsby";
 import React from "react";
-import { ContainerStyles } from "../assets/styles/GlobalStyles";
-import { ButtonStyles, NavStyles } from "../assets/styles/components/NavStyles";
-class Navigation extends React.Component {
+import { ContainerStyles } from "../../assets/styles/GlobalStyles";
+import { ButtonStyles, NavStyles } from "../../assets/styles/components/NavStyles";
+type query = {
+  site: {
+    siteMetadata: {
+      menuLinks: Array<{ name: string; link: string }>;
+    };
+  };
+};
+class Navigation extends React.Component<{ query: query }> {
+  private navButton = React.createRef<HTMLButtonElement>();
+  private navContainer = React.createRef<HTMLDivElement>();
   constructor(props) {
     super(props);
-    this.navButton = React.createRef();
-    this.navContainer = React.createRef();
+
     this.toggleMenu = this.toggleMenu.bind(this);
     this.handleClickOutside = this.handleClickOutside.bind(this);
     this.buttonScrollSwap = this.buttonScrollSwap.bind(this);
@@ -45,7 +53,7 @@ class Navigation extends React.Component {
       <>
         <ButtonStyles
           type="button"
-          onClick={(e) => this.toggleMenu(e)}
+          onClick={() => this.toggleMenu()}
           ref={this.navButton}
           aria-controls="menu"
         >
