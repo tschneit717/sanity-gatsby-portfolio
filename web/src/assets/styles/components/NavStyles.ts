@@ -74,13 +74,9 @@ export const NavStyles = styled.nav`
     left: 0;
   }
   @media (min-width: 769px) {
-    position: absolute;
-    z-index: 100;
-    top: 20px;
     left: 0%;
     width: 100%;
     height: auto;
-    background: none;
     div {
       flex-direction: row;
       width: 90%;
