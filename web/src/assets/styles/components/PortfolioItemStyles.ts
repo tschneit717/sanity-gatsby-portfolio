@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-const itemWidth = "60%"; // Now we can use percentages!
-const viewerDistance = "2500px";
-
 export const PortfolioItemStyles = styled.div`
   color: black;
   .portfolio-item__image {
@@ -31,22 +28,13 @@ export const PortfolioItemStyles = styled.div`
 `;
 
 export const PortfolioGridStyles = styled.div`
-  padding: 20px;
-
-  perspective: ${viewerDistance};
-  overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  > * {
-    flex: 0 0 auto;
-  }
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
   .portfolio-carousel {
     margin: 0;
     display: flex;
-    width: ${itemWidth};
+
     transform-style: preserve-3d;
     transition: transform 0.5s;
 
