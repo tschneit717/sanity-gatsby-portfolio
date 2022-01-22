@@ -12,22 +12,7 @@ body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background: #061639;
+  background-color: $dark;
+  color: $light;
   font-family: "Quicksand", sans-serif;
-}
-
-.green-gradient {
-  background: linear-gradient(to top, #1d976c, #93f9b9);
-}
-.blue-gradient {
-  background: linear-gradient(to top, #2193b0, #6dd5ed);
-}
-.red-gradient {
-  background: linear-gradient(to top, #ff512f, #f09819);
-}
-.yellow-gradient {
-  background: linear-gradient(to top, #ffa751, #ffe259);
-}
-.purple-gradient {
-  background: linear-gradient(to top, #8e54e9, #4776e6);
 }
