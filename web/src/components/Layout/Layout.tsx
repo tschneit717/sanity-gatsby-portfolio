@@ -6,16 +6,27 @@ import "./../../assets/styles/app.scss";
 import { graphql, useStaticQuery } from "gatsby";
 import { LayoutProps } from "./Layout.interface";
 import { Header } from "../Header/Header";
-import { navigationData } from "../../utils/navigation";
-import { BrowserRouter } from "react-router-dom";
 
 export const Layout = ({ children }: LayoutProps) => {
+  const navigationData = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          menuLinks {
+            link
+            name
+          }
+        }
+      }
+    }
+  `);
+
   return (
-    <BrowserRouter>
-      <Nav navItems={navigationData()} />
+    <>
+      <Nav navItems={navigationData.site.siteMetadata.menuLinks} />
       <Header title="title" subtitle="subtitle" />
       <main>{children}</main>
-      <Footer text={""} gridCount={0} children={undefined} />
-    </BrowserRouter>
+      <Footer />
+    </>
   );
 };

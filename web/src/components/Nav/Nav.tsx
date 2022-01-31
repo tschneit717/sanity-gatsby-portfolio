@@ -1,6 +1,6 @@
 import React from "react";
 import { FunctionComponent } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "gatsby";
 import { v4 as uuidv4 } from "uuid";
 import { NavProps } from "./Nav.interface";
 
