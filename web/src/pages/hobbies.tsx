@@ -1,10 +1,11 @@
 import React from "react";
 import { Header } from "../components/Header/Header";
 import { Container } from "../components/Container/Container";
+import { Page } from "../components/Page/Page";
 
 const HobbiesPage = () => {
   return (
-    <>
+    <Page>
       <Container>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
         ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -32,7 +33,7 @@ const HobbiesPage = () => {
         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       </Container>
-    </>
+    </Page>
   );
 };
 

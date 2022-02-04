@@ -1,0 +1,41 @@
+@import './../../assets/styles/app.scss';
+
+.nav {
+  width: toRems(50);
+  background: $dark;
+  transition: width 0.2s ease-out;
+
+  &-list {
+
+  }
+
+  &-item {
+    &__title {
+      opacity: 0;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    &__icon svg {
+      width: toRems(25);
+      height: toRems(25);
+      display: block;
+    }
+  }
+
+  &:hover {
+    width: toRems(200);
+    .nav-item__title {
+      opacity: 1;
+    }
+  }
+
+  ul {
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+        color: $light;
+      }
+    }
+  }
+}

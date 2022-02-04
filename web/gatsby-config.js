@@ -2,6 +2,13 @@
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV || "development"}`,
 });
+const {
+  MdMailOutline,
+  MdOutlineCode,
+  MdOutlineHome,
+  MdOutlinePermIdentity,
+  MdOutlineGamepad,
+} = require("react-icons/md");
 
 const clientConfig = require("./client-config");
 const token = process.env.SANITY_READ_TOKEN;
@@ -31,27 +38,5 @@ module.exports = {
   ],
   siteMetadata: {
     title: "Tom Schneider",
-    menuLinks: [
-      {
-        name: "Home",
-        link: "/",
-      },
-      {
-        name: "About Me",
-        link: "/about",
-      },
-      {
-        name: "Portfolio",
-        link: "/portfolio",
-      },
-      {
-        name: "Hobbies",
-        link: "/hobbies",
-      },
-      {
-        name: "Get In Touch →",
-        link: "/contact",
-      },
-    ],
   },
 };

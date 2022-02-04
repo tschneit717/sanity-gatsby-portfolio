@@ -36,6 +36,12 @@ export default {
       description: "Publish an author and set a reference to them here.",
       title: "Author",
       to: [{ type: "person" }]
+    },
+    {
+      name: "social",
+      type: "array",
+      description: "Connect your social media accounts",
+      of: [{ type: "reference", to: [{ type: "socialMedia" }] }]
     }
   ]
 };

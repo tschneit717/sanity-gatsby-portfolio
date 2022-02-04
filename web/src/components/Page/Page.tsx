@@ -3,13 +3,10 @@ import { FunctionComponent } from "react";
 import { Container } from "../Container/Container";
 import { PageProps } from "./Page.interface";
 
-export const Page: FunctionComponent<PageProps> = ({ title, children, testId }: PageProps) => {
+export const Page: FunctionComponent<PageProps> = ({ children, testId }: PageProps) => {
   return (
-    <div data-testid={testId} data-component-type="Page">
-      <Container>
-        <h1>{title}</h1>
-      </Container>
+    <main data-testid={testId} data-component-type="Page">
       <Container>{children}</Container>
-    </div>
+    </main>
   );
 };
